@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Debug overrides -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow cleartext (HTTP) traffic for specific domains -->
+        <domain includeSubdomains="true">192.168.61.15:8000</domain>
+    </domain-config>
+
+    <!-- Allow cleartext traffic globally (use cautiously) -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
